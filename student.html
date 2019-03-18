@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   
+
+<script type="text/javascript">
+	function validate()
+	{
+		if(alform.dept.value == "")
+		{	alert("Please provide the Department");
+			return false;
+		}
+
+
+
+		if(alform.dept.value == "cse")
+		{	
+					window.location = "input_cse.php";
+					return false;
+		}
+
+
+
+		if(alform.dept.value == "ece")
+		{	
+					window.location = "input_ece.php";
+					return false;
+		}
+
+
+
+		if(alform.dept.value == "eee")
+		{	
+					window.location = "input_eee.php";
+					return false;
+		}
+
+
+
+		if(alform.dept.value == "civil")
+		{	
+					window.location = "input_civil.php";
+					return false;
+		}
+
+
+		if(alform.dept.value == "mech")
+		{	
+					window.location = "input_mech.php";
+					return false;
+		}
+
+
+
+  return true;
+}
+	</script>
+  </head>
+
+
+
+
+  <body style="background-color: black;color: white">
+    <center><br><br>
+    <h1>Student Mark List</h1><br><br>
+
+
+
+<form  name="alform"   onsubmit="return validate();">
+
+   <div class="col-auto my-1" style="width: 22%">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Department</label>
+      <select name="dept"  class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option value="">Choose...</option>
+        <option value="cse">CSE</option>
+        <option value="mech">Mechanical</option>
+        <option value="ece">ECE</option>
+        <option value="eee">EEE</option>
+        <option value="civil">Civil</option>
+      </select>
+    	<br><br>
+ 		<button type="submit" class="btn btn-primary" style="background-color:red" onclick="">Submit</button>
+ 		<a href="index.html"><button type="button" class="btn btn-success">Back</button></a>
+ 		<br><br><br>
+
+
+   </div>
+ </form>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+
+  </center>
+</body>
+</html>
