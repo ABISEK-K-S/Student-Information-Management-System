@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+
+
+
+<script type="text/javascript">
+	function validate()
+	{
+		if(alform.dept.value == "")
+		{	alert("Please provide the Department");
+			return false;
+		}
+
+
+
+		if(alform.dept.value == "cse")
+		{	
+					window.location = "updatemarks_cse.html";
+					return false;
+		}
+
+
+
+		if(alform.dept.value == "ece")
+		{	
+					window.location = "updatemarks_ece.html";
+					return false;
+		}
+
+
+
+		if(alform.dept.value == "eee")
+		{	
+					window.location = "updatemarks_eee.html";
+					return false;
+		}
+
+
+
+		if(alform.dept.value == "civil")
+		{	
+					window.location = "updatemarks_civil.html";
+					return false;
+		}
+
+
+		if(alform.dept.value == "mech")
+		{	
+					window.location = "updatemarks_mech.html";
+					return false;
+		}
+
+
+
+  return true;
+}
+	</script>
+
+
+  </head>
+  
+
+  <body style="background-color: black;color: white">
+    <center><br>
+    <h1>Faculty Terminal</h1>
+    <br><br><br><br><br>
+
+<form name="alform"  action="" method="post" onsubmit="return validate();">
+
+
+  <div class="form-group" style="width: 20%" >
+    <label for="exampleInputEmail1">Enter User Id</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" >
+    <br>
+    <label for="exampleInputEmail1">Enter password</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+
+
+<div class="col-auto my-1" style="width: 22%">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Department</label>
+      <select name="dept"  class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option value=""></option>
+        <option value="cse">CSE</option>
+        <option value="mech">Mechanical</option>
+        <option value="ece">ECE</option>
+        <option value="eee">EEE</option>
+        <option value="civil">Civil</option>
+      </select><br><br>
+
+  <input type="submit" value="submit" class="btn btn-primary" style="background-color:red" onclick="">
+
+</form>&emsp;&emsp;&emsp;&emsp;
+
+  <a href="../index.html"><button type="button" class="btn btn-success">Back</button></a>  <br><br><br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
